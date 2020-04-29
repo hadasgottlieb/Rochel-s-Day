@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rochel's Day</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- This program will take an input of Rochel's wake up time, and return a full schedule for all feedings and naps for the day. -->
+    <div id = "title-container">
+        <h1>Rochel's Day</h1>
+        <h2>"A scheduled baby is a happy baby." - Avrohom Gottlieb, Tatty extraordinaire</h2>
+    </div>
+    <div id = "prelim-container">
+        <!-- prelim Qs -->
+        <h3>First feeding:</h3>
+        <input type="time">
+      
+        <h3>Total awake time:</h3>
+        <input type="time">
+        <br>
+        <button>Render Schedule</button>
+    </div>
+    
+    <div id = "schedule-container" class = "dropdown">
+            <!-- Schedule -->
+        <ul>
+            <li><h3>Feeding 1</h3><label for="">How much?</label><input type="number" min = 0 placeholder = "0" class = "feeding"></li>
+            <li><h3>Nap 1</h3></li>
+            <li><h3>Feeding 2</h3><label for="">How much?</label><input type="number" min = 0 placeholder = "0" class = "feeding"></li>
+            <li><h3>Nap 2</h3></li>
+            <li><h3>Feeding 3</h3><label for="">How much?</label><input type="number" min = 0 placeholder = "0" class = "feeding"></li>
+            <li><h3>Nap 3</h3></li>
+            <li><h3>Feeding 4</h3><label for="">How much?</label><input type="number" min = 0 placeholder = "0" class = "feeding"></li>
+            <li><h3>Nap 4</h3></li>
+            <li><h3>Feeding 5</h3><label for="">How much?</label><input type="number" min = 0 placeholder = "0" class = "feeding"></li>
+            <li><h3>Bedtime</h3></li>
+        </ul>
+        <button id = "review-day">Review Day</button>
+    </div>
+    <div id = "instructions-container" class = "dropdown">
+        <p>Instructions: <br> Enter amount Rochel ate for each feeding. <br> Click the button that best describes Rochel's nap.</p>
+    </div>
+    
+    <div id = "review-container">
+        <!-- Day in review -->
+        <h3>Total eaten: <span id="feeding-amount">0</span> oz</h3>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src = "index.js"></script>
+</body>
+</html>
